@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="CallMediatorProxy" transports="https http" startOnLoad="true" trace="disable">
+    <target>
+        <inSequence>
+            <log level="custom" separator=",">
+                <property name="STATUS" value="PRE-CALL1"/>
+            </log>
+            <call>
+                <endpoint>
+                    <address uri="http://localhost:9764/HiRollerBankWS/services/geolocation"/>
+                </endpoint>
+            </call>
+            <payloadFactory media-type="xml">
+                <format>
+                    <hir:getLocation xmlns:hir="http://hirollerbankws.training.wso2.com/">
+                        <zipcode xmlns="">$1</zipcode>
+                    </hir:getLocation>
+                </format>
+                <args>
+                    <arg xmlns:hir="http://hirollerbankws.training.wso2.com/" evaluator="xml" expression="//*[local-name()='return']"/>
+                </args>
+            </payloadFactory>
+            <log level="custom" separator=",">
+                <property name="STATUS" value="CALL1-CALL2"/>
+            </log>
+            <call>
+                <endpoint>
+                    <address uri="http://localhost:9764/HiRollerBankWS/services/atmlocator"/>
+                </endpoint>
+            </call>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+</proxy>

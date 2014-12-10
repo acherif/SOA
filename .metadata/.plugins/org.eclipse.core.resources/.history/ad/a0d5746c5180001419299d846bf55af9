@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="ATMLocatorProxy" transports="http https" startOnLoad="true" trace="disable">
+    <target>
+        <inSequence>
+            <property name="STATUS" value="GEO_LOCATION_REQUEST" scope="default" type="STRING" description=""/>
+            <send>
+                <endpoint>
+                    <address uri="http://localhost:9764/HiRollerBankWS/services/geolocation"/>
+                </endpoint>
+            </send>
+        </inSequence>
+        <outSequence>
+            <switch source="get-property('STATUS')">
+                <case regex="GEO_LOCATION_REQUEST">
+                    <payloadFactory media-type="xml">
+                        <format>
+                            <hir:getLocation xmlns:hir="http://hirollerbankws.training.wso2.com/">
+                                <zipcode xmlns="">$1</zipcode>
+                            </hir:getLocation>
+                        </format>
+                        <args>
+                            <arg xmlns:hir="http://hirollerbankws.training.wso2.com/" evaluator="xml" expression="//*[local-local()='return']"/>
+                        </args>
+                    </payloadFactory>
+                </case>
+                <default/>
+            </switch>
+        </outSequence>
+        <faultSequence/>
+    </target>
+</proxy>

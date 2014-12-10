@@ -5,4 +5,7 @@
     <artifact name="ATMLocatorProxy" groupId="com.wso2.training.HiRollerBank.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
         <file>src/main/synapse-config/proxy-services/ATMLocatorProxy.xml</file>
     </artifact>
+    <artifact name="CallMediatorProxy" groupId="com.wso2.training.HiRollerBank.proxy-service" version="1.0.0" type="synapse/proxy-service" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/proxy-services/CallMediatorProxy.xml</file>
+    </artifact>
 </artifacts>

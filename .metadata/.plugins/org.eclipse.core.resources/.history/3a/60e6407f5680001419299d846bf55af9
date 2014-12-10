@@ -1,0 +1,13 @@
+<proxy xmlns="http://ws.apache.org/ns/synapse"
+	name="CallMediatorProxy" transports="https,http" statistics="disable" trace="disable"
+	startOnLoad="true">
+	<target>
+		<outSequence>
+			<send />
+		</outSequence>
+		<endpoint
+		name="endpoint_urn_uuid_599a90af-8186-4dd2-a3ac-49f311551282">
+		<address uri="http://localhost:9764/HiRollerBankWS/services/geolocation" />
+		</endpoint>
+	</target>
+</proxy>
