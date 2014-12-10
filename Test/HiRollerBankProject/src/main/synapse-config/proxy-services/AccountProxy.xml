@@ -1,0 +1,13 @@
+<proxy xmlns="http://ws.apache.org/ns/synapse"
+	name="AccountProxy" transports="https,http" statistics="disable" trace="disable"
+	startOnLoad="true">
+	<target>
+		<outSequence>
+			<send />
+		</outSequence>
+		<endpoint
+		name="endpoint_urn_uuid_fc504496-a3f8-4f69-8c2f-5dec29aa10aa">
+		<address uri="http://localhost:9764/HiRollerBankWS/services/accounts" />
+		</endpoint>
+	</target>
+</proxy>

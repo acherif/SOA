@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/developerstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_-FPRcIBMEeSH1st6qqsEfw" type="Esb" name="proxy_ATMLocatorProxy.esb_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_-Ku1cIBMEeSH1st6qqsEfw" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-Ku1dYBMEeSH1st6qqsEfw" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_-aV-wIBMEeSH1st6qqsEfw" type="3001">
+        <children xmi:type="notation:DecorationNode" xmi:id="_-aWl1IBMEeSH1st6qqsEfw" type="5003"/>
+        <styles xmi:type="notation:DescriptionStyle" xmi:id="_-aWl0IBMEeSH1st6qqsEfw"/>
+        <styles xmi:type="notation:FontStyle" xmi:id="_-aWl0YBMEeSH1st6qqsEfw" fontName="Segoe UI"/>
+        <styles xmi:type="notation:LineStyle" xmi:id="_-aWl0oBMEeSH1st6qqsEfw"/>
+        <element xmi:type="esb:ProxyService" href="proxy_ATMLocatorProxy.esb#//@server/@children.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-aWl04BMEeSH1st6qqsEfw" width="300" height="400"/>
+      </children>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_-Ku1cYBMEeSH1st6qqsEfw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-Ku1coBMEeSH1st6qqsEfw" fontName="Segoe UI"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_-Ku1c4BMEeSH1st6qqsEfw"/>
+    <element xmi:type="esb:EsbServer" href="proxy_ATMLocatorProxy.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-Ku1dIBMEeSH1st6qqsEfw"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_-FPRcYBMEeSH1st6qqsEfw"/>
+  <element xmi:type="esb:EsbDiagram" href="proxy_ATMLocatorProxy.esb#/"/>
+</notation:Diagram>

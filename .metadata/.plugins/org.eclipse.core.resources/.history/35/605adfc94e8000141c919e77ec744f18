@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="ATMLocatorProxy" transports="http https" startOnLoad="true" trace="disable">
+    <target>
+        <inSequence>
+            <property name="STATUS" value="GEO_LOCATION_REQUEST" scope="default" type="STRING" description=""/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </target>
+</proxy>

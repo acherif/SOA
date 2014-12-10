@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="AccountProxy" transports="https http" startOnLoad="true" trace="disable">
+    <target>
+        <endpoint name="endpoint_urn_uuid_ac5a4f56-15c2-4d63-8e82-eed715b4b998">
+            <address uri="http://localhost:9764/HiRollerBankWS/services/accounts"/>
+        </endpoint>
+        <inSequence>
+            <log level="custom" separator=",">
+                <property name="STATUS" value="Account Balance Request"/>
+            </log>
+            <switch xmlns:hir="http://hirollerbankws.training.wso2.com/" source="//hir:type">
+                <case regex="CHK">
+                    <log level="custom" separator="," description="">
+                        <property name="STATUS" value="CHK Balance Request"/>
+                    </log>
+                    <payloadFactory media-type="xml">
+                        <format>
+                            <hir:checkBalance>
+                                <accountNo xmlns="">$1</accountNo>
+                            </hir:checkBalance>
+                        </format>
+                        <args>
+                            <arg evaluator="xml" expression="//hir:account"/>
+                        </args>
+                    </payloadFactory>
+                </case>
+                <default>
+                    <log level="custom" separator=",">
+                        <property name="STATUS" value="SAV Balance Request"/>
+                    </log>
+                    <payloadFactory media-type="xml">
+                        <format>
+                            <hir:saveBalance>
+                                <accountNo xmlns="">$1</accountNo>
+                            </hir:saveBalance>
+                        </format>
+                        <args>
+                            <arg evaluator="xml" expression="//hir:account"/>
+                        </args>
+                    </payloadFactory>
+                </default>
+            </switch>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+</proxy>
