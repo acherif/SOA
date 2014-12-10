@@ -41,9 +41,7 @@
             </children>
             <children xsi:type="esb:SwitchMediator">
               <sourceXpath prettyName="Switch Source XPath" propertyName="switchSourceXpath" propertyValue="get-property('STATUS')" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
-              <caseBranches caseRegex="GEO_LOCATION_REQUEST">
-                <outgoingLink target="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow/@children.0/@inputConnector"/>
-              </caseBranches>
+              <caseBranches caseRegex="GEO_LOCATION_REQUEST"/>
               <defaultBranch/>
               <inputConnector incomingLinks="//@server/@children.0/@outSequenceOutputConnector/@outgoingLink"/>
               <outputConnector>
@@ -52,16 +50,7 @@
               <switchContainer>
                 <switchCaseParentContainer>
                   <switchCaseContainer>
-                    <mediatorFlow>
-                      <children xsi:type="esb:PayloadFactoryMediator" payload="&lt;hir:getLocation xmlns:hir=&quot;http://hirollerbankws.training.wso2.com/&quot;>&#xD;&#xA;&lt;zipcode>$1&lt;/zipcode>&#xD;&#xA;&lt;/hir:getLocation>">
-                        <payloadKey prettyName="Sequence Key" keyName="Sequence Key" keyValue="/default/key" filters="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F400000000000107708000000100000000078"/>
-                        <args argumentType="Expression">
-                          <argumentExpression prettyName="Argument Expression" propertyName="Argument Expression" propertyValue="//*[local-local()='return']" namespaces="ACED0005737200116A6176612E7574696C2E486173684D61700507DAC1C31660D103000246000A6C6F6164466163746F724900097468726573686F6C6478703F4000000000000C77080000001000000001740003686972740028687474703A2F2F6869726F6C6C657262616E6B77732E747261696E696E672E77736F322E636F6D2F78"/>
-                        </args>
-                        <inputConnector incomingLinks="//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@caseBranches.0/@outgoingLink"/>
-                        <outputConnector/>
-                      </children>
-                    </mediatorFlow>
+                    <mediatorFlow/>
                   </switchCaseContainer>
                 </switchCaseParentContainer>
                 <switchDefaultParentContainer>

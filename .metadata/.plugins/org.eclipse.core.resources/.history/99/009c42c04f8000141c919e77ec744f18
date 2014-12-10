@@ -141,58 +141,6 @@
                     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0VtmNIBOEeSCH_v2grDaYg" x="81" y="16"/>
                   </children>
                   <children xmi:type="notation:Node" xmi:id="_0VuNQIBOEeSCH_v2grDaYg" type="3500">
-                    <children xmi:type="notation:Node" xmi:id="_0WNVcIBOEeSCH_v2grDaYg" type="3732">
-                      <children xmi:type="notation:Node" xmi:id="_0WRm4IBOEeSCH_v2grDaYg" type="3733">
-                        <children xmi:type="notation:Node" xmi:id="_0WUqMIBOEeSCH_v2grDaYg" type="3502">
-                          <children xmi:type="notation:DecorationNode" xmi:id="_0WVRQoBOEeSCH_v2grDaYg" type="7015">
-                            <children xmi:type="notation:Node" xmi:id="_Z308sIBPEeSCH_v2grDaYg" type="3597">
-                              <children xmi:type="notation:DecorationNode" xmi:id="_Z31jwIBPEeSCH_v2grDaYg" type="5191"/>
-                              <children xmi:type="notation:Node" xmi:id="_Z4C_IIBPEeSCH_v2grDaYg" type="3598">
-                                <styles xmi:type="notation:DescriptionStyle" xmi:id="_Z4C_IYBPEeSCH_v2grDaYg"/>
-                                <styles xmi:type="notation:FontStyle" xmi:id="_Z4C_IoBPEeSCH_v2grDaYg" fontName="Segoe UI"/>
-                                <styles xmi:type="notation:LineStyle" xmi:id="_Z4C_I4BPEeSCH_v2grDaYg"/>
-                                <element xmi:type="esb:PayloadFactoryMediatorInputConnector" href="proxy_ATMLocatorProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow/@children.0/@inputConnector"/>
-                                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z4C_JIBPEeSCH_v2grDaYg" x="-6" y="-5"/>
-                              </children>
-                              <children xmi:type="notation:Node" xmi:id="_Z4DmMIBPEeSCH_v2grDaYg" type="3599">
-                                <styles xmi:type="notation:DescriptionStyle" xmi:id="_Z4DmMYBPEeSCH_v2grDaYg"/>
-                                <styles xmi:type="notation:FontStyle" xmi:id="_Z4DmMoBPEeSCH_v2grDaYg" fontName="Segoe UI"/>
-                                <styles xmi:type="notation:LineStyle" xmi:id="_Z4DmM4BPEeSCH_v2grDaYg"/>
-                                <element xmi:type="esb:PayloadFactoryMediatorOutputConnector" href="proxy_ATMLocatorProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow/@children.0/@outputConnector"/>
-                                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z4DmNIBPEeSCH_v2grDaYg" x="-11" y="-9"/>
-                              </children>
-                              <styles xmi:type="notation:DescriptionStyle" xmi:id="_Z308sYBPEeSCH_v2grDaYg"/>
-                              <styles xmi:type="notation:FontStyle" xmi:id="_Z308soBPEeSCH_v2grDaYg" fontName="Segoe UI"/>
-                              <styles xmi:type="notation:LineStyle" xmi:id="_Z308s4BPEeSCH_v2grDaYg"/>
-                              <element xmi:type="esb:PayloadFactoryMediator" href="proxy_ATMLocatorProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow/@children.0"/>
-                              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Z308tIBPEeSCH_v2grDaYg" x="24" y="10"/>
-                            </children>
-                          </children>
-                          <styles xmi:type="notation:DescriptionStyle" xmi:id="_0WUqMYBOEeSCH_v2grDaYg"/>
-                          <styles xmi:type="notation:FontStyle" xmi:id="_0WUqMoBOEeSCH_v2grDaYg" fontName="Segoe UI"/>
-                          <styles xmi:type="notation:LineStyle" xmi:id="_0WVRQIBOEeSCH_v2grDaYg"/>
-                          <element xmi:type="esb:MediatorFlow" href="proxy_ATMLocatorProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0/@mediatorFlow"/>
-                          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0WVRQYBOEeSCH_v2grDaYg"/>
-                        </children>
-                        <styles xmi:type="notation:DescriptionStyle" xmi:id="_0WRm4YBOEeSCH_v2grDaYg"/>
-                        <styles xmi:type="notation:FontStyle" xmi:id="_0WRm4oBOEeSCH_v2grDaYg" fontName="Segoe UI"/>
-                        <styles xmi:type="notation:LineStyle" xmi:id="_0WRm44BOEeSCH_v2grDaYg"/>
-                        <element xmi:type="esb:SwitchCaseContainer" href="proxy_ATMLocatorProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@switchContainer/@switchCaseParentContainer/@switchCaseContainer.0"/>
-                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0WRm5IBOEeSCH_v2grDaYg"/>
-                      </children>
-                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_0WNVcYBOEeSCH_v2grDaYg"/>
-                      <styles xmi:type="notation:FontStyle" xmi:id="_0WNVcoBOEeSCH_v2grDaYg" fontName="Segoe UI"/>
-                      <styles xmi:type="notation:LineStyle" xmi:id="_0WNVc4BOEeSCH_v2grDaYg"/>
-                      <element xmi:type="esb:SwitchCaseParentContainer" href="proxy_ATMLocatorProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@switchContainer/@switchCaseParentContainer"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0WNVdIBOEeSCH_v2grDaYg"/>
-                    </children>
-                    <children xmi:type="notation:Node" xmi:id="_0WN8gIBOEeSCH_v2grDaYg" type="3734">
-                      <styles xmi:type="notation:DescriptionStyle" xmi:id="_0WN8gYBOEeSCH_v2grDaYg"/>
-                      <styles xmi:type="notation:FontStyle" xmi:id="_0WN8goBOEeSCH_v2grDaYg" fontName="Segoe UI"/>
-                      <styles xmi:type="notation:LineStyle" xmi:id="_0WN8g4BOEeSCH_v2grDaYg"/>
-                      <element xmi:type="esb:SwitchDefaultParentContainer" href="proxy_ATMLocatorProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@switchContainer/@switchDefaultParentContainer"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0WN8hIBOEeSCH_v2grDaYg"/>
-                    </children>
                     <styles xmi:type="notation:DescriptionStyle" xmi:id="_0VuNQYBOEeSCH_v2grDaYg"/>
                     <styles xmi:type="notation:FontStyle" xmi:id="_0VuNQoBOEeSCH_v2grDaYg" fontName="Segoe UI"/>
                     <styles xmi:type="notation:LineStyle" xmi:id="_0VuNQ4BOEeSCH_v2grDaYg"/>
@@ -283,10 +231,5 @@
     <styles xmi:type="notation:FontStyle" xmi:id="_0XZBMYBOEeSCH_v2grDaYg" fontName="Segoe UI"/>
     <element xmi:type="esb:EsbLink" href="proxy_ATMLocatorProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@outputConnector/@outgoingLink"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0XZBMoBOEeSCH_v2grDaYg" points="[-11, 0, 224, -15]$[-224, 14, 11, -1]"/>
-  </edges>
-  <edges xmi:type="notation:Connector" xmi:id="_Z4lKoIBPEeSCH_v2grDaYg" type="4001" source="_0Vs_IIBOEeSCH_v2grDaYg" target="_Z4C_IIBPEeSCH_v2grDaYg" roundedBendpointsRadius="5" routing="Rectilinear">
-    <styles xmi:type="notation:FontStyle" xmi:id="_Z4lKoYBPEeSCH_v2grDaYg" fontName="Segoe UI"/>
-    <element xmi:type="esb:EsbLink" href="proxy_ATMLocatorProxy.esb#//@server/@children.0/@container/@sequenceAndEndpointContainer/@mediatorFlow/@children.2/@caseBranches.0/@outgoingLink"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Z4lKooBPEeSCH_v2grDaYg" points="[-11, -6, 34, 0]$[-39, -6, 6, 0]"/>
   </edges>
 </notation:Diagram>

@@ -11,18 +11,7 @@
         </inSequence>
         <outSequence>
             <switch source="get-property('STATUS')">
-                <case regex="GEO_LOCATION_REQUEST">
-                    <payloadFactory media-type="xml">
-                        <format>
-                            <hir:getLocation xmlns:hir="http://hirollerbankws.training.wso2.com/">
-                                <zipcode xmlns="">$1</zipcode>
-                            </hir:getLocation>
-                        </format>
-                        <args>
-                            <arg xmlns:hir="http://hirollerbankws.training.wso2.com/" evaluator="xml" expression="//*[local-local()='return']"/>
-                        </args>
-                    </payloadFactory>
-                </case>
+                <case regex="GEO_LOCATION_REQUEST"/>
                 <default/>
             </switch>
         </outSequence>
